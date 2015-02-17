@@ -1,3 +1,5 @@
+// variable prep...
+
 (function(JS) {
 
 	"use strict";
@@ -27,3 +29,50 @@
 	console.log(und);
 
 }("JavaScript..."));
+
+// variable scope prep...
+
+testGlobalVariable = 'Standard Global...';
+
+(function() {
+
+	"use strict";
+
+	var testGlobalVariable = 'Top of the functional scope...';
+	
+	function testFunction() {
+
+		var testFunctionVariable = 'Local...';
+
+		return testFunctionVariable;
+
+	}
+
+	function anotherTestFunction() {
+
+		// illegal with strict usage and proper engine interpretation...
+		// anotherGlobalVariable = 'Global...';
+
+		// return anotherGlobalVariable;
+
+	}
+
+	console.log(testGlobalVariable);
+	console.log(testFunction());
+	// console.log(anotherTestFunction());
+	
+	// cannot retreive this value, it's locked in its functional scope...
+	// console.log(testFunctionVariable);
+	// console.log(anotherGlobalVariable);
+
+}());
+
+// operators prep...
+
+(function() {
+
+	"use strict";
+
+	
+
+}());
