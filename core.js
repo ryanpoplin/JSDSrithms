@@ -1,8 +1,10 @@
-// variable prep...
+// variable and basic type prep...
 
 (function(JS) {
 
 	"use strict";
+
+	console.log('\n');
 
 	console.log(JS);
 
@@ -38,6 +40,8 @@ testGlobalVariable = 'Standard Global...';
 
 	"use strict";
 
+	console.log('\n');
+
 	var testGlobalVariable = 'Top of the functional scope...';
 	
 	function testFunction() {
@@ -72,6 +76,50 @@ testGlobalVariable = 'Standard Global...';
 (function() {
 
 	"use strict";
+	
+	console.log('\n');
+
+	var num = 0;
+
+	num = num + 2;
+
+	num = num * 3;
+
+	num = num / 2;
+
+	num++;
+	++num;
+	num--;
+	--num;
+
+	num += 1;
+	num -= 2;
+	num *= 14;
+	num /= 22;
+	num %= 2;
+
+	var testNum = 24;
+
+	// (x == || === y) returns (true || false)
+	console.log('testNum == 1 : ' + (testNum == 1));
+	console.log('testNum === 1 : ' + (testNum === 1));
+	console.log('testNum != 1 : ' + (testNum != 1));
+	console.log('testNum !== 1 : ' + (testNum !== 1));
+	console.log('testNum > 1 : ' + (testNum > 1));
+	console.log('testNum < 1 : ' + (testNum < 1));
+	console.log('testNum >= 1 : ' + (testNum >= 1));
+	console.log('testNum <= 1 : ' + (testNum <= 1));
+
+	console.log('true && false : ' + (true && false));
+	console.log('true || false : ' + (true || false));
+	console.log('!true : ' + (!true));
+
+	console.log('5 & 1:', (5 & 1));
+	console.log('5 | 1:', (5 | 1));
+	console.log('~ 5:', (~5));
+	console.log('5 ^ 1:', + (5 ^ 1));
+	console.log('5 << 1:', + (5 << 1));
+	console.log('5 >> 1:', + (5 >> 1));
 
 	
 
